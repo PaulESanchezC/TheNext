@@ -1,8 +1,5 @@
 # TheNext
 
-TheNext, stands for The Next Project, it's main purpose is to mine data from operations of a bussiness, providing the data analysis team with the metrics
-they hypothetically demanded.
-
 The data analysis department requires to do their SSIS, but the company updated their system to the latests Visual studio (VS2022), after months on waiting for SSIS support so they can do their jobs, they have decided to contact me to help develop some mock up of a SSIS tool to help them achieve some data collection for a data warehouse, from some other departments.
 
 # The Problem
