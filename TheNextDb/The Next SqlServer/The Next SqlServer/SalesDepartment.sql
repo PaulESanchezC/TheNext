@@ -15,11 +15,17 @@ create table OrdersPayments
 	OrderPaymentComment varchar(100)
 );
 
+create table Clients
+(
+	ClientId int primary key
+);
+
 create table Sales
 (
 	SaleId int primary key,
 	SaleDate datetime default getDate(),	
-	OrderId int references Orders (OrderId)
+	OrderId int references Orders (OrderId),
+	ClientId int references Clients(ClientId)
 );
 
 create table Products 
