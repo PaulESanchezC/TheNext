@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "The Next Data Warehouse", "The Next Data Warehouse\The Next Data Warehouse.ssmssqlproj", "{994F4747-9786-4C36-A60F-C6734D70518A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{994F4747-9786-4C36-A60F-C6734D70518A}.Default|Default.ActiveCfg = Default
+		{9B7F4B3E-230B-4AEC-83ED-4F95F134B744}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {216CADBF-D681-42AC-82EC-8E0D56947F55}
+	EndGlobalSection
+EndGlobal
