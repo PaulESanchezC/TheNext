@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="The Next Production Department">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="The Next Sales Department">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="(localdb)\MSSQLLocalDB:PAULSPC\Paulyglot">
-          <Created>2022-05-17T16:14:35.5342143-04:00</Created>
+          <Created>2022-05-17T16:15:48.0149626-04:00</Created>
           <Type>SQL</Type>
           <Server>(localdb)\MSSQLLocalDB</Server>
           <UserName />
@@ -19,11 +19,11 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="Production Department.sql">
+        <FileNode Name="Sales Department.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(localdb)\MSSQLLocalDB:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(localdb)\MSSQLLocalDB</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Production Department.sql</FullPath>
+          <FullPath>Sales Department.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
