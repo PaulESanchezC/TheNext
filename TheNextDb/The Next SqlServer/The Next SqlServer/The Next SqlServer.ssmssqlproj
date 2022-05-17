@@ -3,6 +3,18 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
+        <ConnectionNode Name="(localdb)\MSSQLLocalDB:PAULSPC\Paulyglot">
+          <Created>2022-05-17T15:15:12.451248-04:00</Created>
+          <Type>SQL</Type>
+          <Server>(localdb)\MSSQLLocalDB</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
         <ConnectionNode Name="PaulSPc:PAULSPC\Paulyglot">
           <Created>2022-05-17T14:13:32.0787726-04:00</Created>
           <Type>SQL</Type>
@@ -24,6 +36,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>ProdctionDepartment.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SalesDepartment.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(localdb)\MSSQLLocalDB:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(localdb)\MSSQLLocalDB</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SalesDepartment.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
