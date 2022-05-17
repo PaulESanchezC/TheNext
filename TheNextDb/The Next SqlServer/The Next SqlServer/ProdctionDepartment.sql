@@ -3,7 +3,6 @@ create table Products
 	ProductId int primary key,
 	ProductName varchar(50),
 	ProductDescription varchar(550),	
-	--Many To Many of: Products with the facilities that fabricate the product, and their costs
 
 	--Bussiness logic
 	DateCreated date default getDate(),
