@@ -1,6 +1,6 @@
 create table Customers
 (
-	CustomerId int primary key,
+	CustomerId uniqueidentifier primary key default newsequentialid(),
 	CustomerFirstName varchar (50) not null,
 	CustomerMiddleName varchar (50) null,
 	CustomerLastName varchar (50) not null,

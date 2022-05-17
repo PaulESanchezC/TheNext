@@ -1,6 +1,6 @@
 create table Products 
 (
-	ProductId int primary key,
+	ProductId uniqueidentifier primary key default newsequentialid(),
 	ProductName varchar(50) not null,
 	ProductDescription varchar(550) not null,
 
@@ -11,7 +11,7 @@ create table Products
 
 create table ProductionFacilities
 (
-	ProductionFacilityId int primary key,
+	ProductionFacilityId uniqueidentifier primary key default newsequentialid(),
 	ProductionFacilityName varchar(100) not null unique,	
 	ProductionFacilityEmail varchar(50) not null unique,
 	ProductionFacilityPhone varchar(50) not null,
@@ -28,7 +28,7 @@ create table ProductionFacilities
 
 create table ProductionCycles
 (
-	ProductionCycleId int primary key,
+	ProductionCycleId uniqueidentifier primary key default newsequentialid(),
 	ProductionCycleName varchar(50) not null,
 	ProductionCycleDescription varchar(550) not null,
 	ProductionCycleEstimatedTime smallint not null,
@@ -40,9 +40,9 @@ create table ProductionCycles
 
 create table ProductionCosts
 (
-	ProductionCostId int primary key,
-	ProductId int references Products(ProductId) not null,
-	ProductionCycleId int references ProductionCycles(ProductionCycleId) not null,
+	ProductionCostId uniqueidentifier primary key default newsequentialid(),
+	ProductId uniqueidentifier references Products(ProductId) not null,
+	ProductionCycleId uniqueidentifier references ProductionCycles(ProductionCycleId) not null,
 	
 	ProductionCost smallmoney not null,
 
@@ -53,7 +53,7 @@ create table ProductionCosts
 
 create table Production_FacilitiesCosts
 (
-	Production_FacilitiesCosts int primary key,
-	ProductionFacilityId int references ProductionFacilities(ProductionFacilityId),
-	ProductionCostId int references ProductionCosts (ProductionCostId), 	
+	Production_FacilitiesCosts uniqueidentifier primary key default newsequentialid(),
+	ProductionFacilityId uniqueidentifier references ProductionFacilities(ProductionFacilityId),
+	ProductionCostId uniqueidentifier references ProductionCosts (ProductionCostId), 	
 );

@@ -2,12 +2,12 @@ create table Dim_Products
 (
 	Dim_PrdouctsId int primary key,
 	--Products
-	ProductId int,
+	ProductId uniqueidentifier,
 	ProductName varchar(50),
 	ProductDescription varchar(50),
 	ProductDateCreated date,
 	--Facilities
-	ProductionFacilityId int,
+	ProductionFacilityId uniqueidentifier,
 	ProductionFacilityName varchar(100),	
 	ProductionFacilityEmail varchar(50) unique,
 	ProductionFacilityPhone varchar(50),	
@@ -18,13 +18,13 @@ create table Dim_Products
 	ProductionFacilityProvince varchar (50),
 	ProductionDateCreated date default getDate(),
 	--ProductionCycles
-	ProductionCycleId int,
+	ProductionCycleId uniqueidentifier,
 	ProductionCycleName varchar(50),
 	ProductionCycleDescription varchar(550),
 	ProductionCycleEstimatedTime smalldatetime,
 	--Bussiness logic
 	DateCreated date default getDate(),
 	--Production Costs
-	ProductionCostId int,	
+	ProductionCostId uniqueidentifier,	
 	ProductionCost smallmoney,
 );
