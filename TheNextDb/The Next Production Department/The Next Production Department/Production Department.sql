@@ -1,8 +1,8 @@
 create table Products 
 (
 	ProductId int primary key,
-	ProductName varchar(50),
-	ProductDescription varchar(550),	
+	ProductName varchar(50) not null,
+	ProductDescription varchar(550) not null,
 
 	--Bussiness logic
 	DateCreated date default getDate(),
@@ -12,14 +12,14 @@ create table Products
 create table ProductionFacilities
 (
 	ProductionFacilityId int primary key,
-	ProductionFacilityName varchar(100),	
-	ProductionFacilityEmail varchar(50) unique,
-	ProductionFacilityPhone varchar(50),	
-	ProductionFacilityCategory tinyint,
-	ProductionFacilityStreetAddress varchar(100),
-	ProductionFacilityPostalCode varchar(20),
-	ProductionFacilityCity varchar(50),
-	ProductionFacilityProvince varchar (50),
+	ProductionFacilityName varchar(100) not null unique,	
+	ProductionFacilityEmail varchar(50) not null unique,
+	ProductionFacilityPhone varchar(50) not null,
+	ProductionFacilityCategory tinyint default 10,
+	ProductionFacilityStreetAddress varchar(100) not null,
+	ProductionFacilityPostalCode varchar(20) not null,
+	ProductionFacilityCity varchar(50) not null,
+	ProductionFacilityProvince varchar (50) not null,
 	
 	--Bussiness logic
 	DateCreated date default getDate(),
@@ -29,9 +29,9 @@ create table ProductionFacilities
 create table ProductionCycles
 (
 	ProductionCycleId int primary key,
-	ProductionCycleName varchar(50),
-	ProductionCycleDescription varchar(550),
-	ProductionCycleEstimatedTime smalldatetime,
+	ProductionCycleName varchar(50) not null,
+	ProductionCycleDescription varchar(550) not null,
+	ProductionCycleEstimatedTime smallint not null,
 
 	--Bussiness logic
 	DateCreated date default getDate(),
@@ -41,10 +41,10 @@ create table ProductionCycles
 create table ProductionCosts
 (
 	ProductionCostId int primary key,
-	ProductId int references Products(ProductId),
-	ProductionCycleId int references ProductionCycles(ProductionCycleId),
+	ProductId int references Products(ProductId) not null,
+	ProductionCycleId int references ProductionCycles(ProductionCycleId) not null,
 	
-	ProductionCost smallmoney default 0.00,
+	ProductionCost smallmoney not null,
 
 	--Bussiness logic
 	DateCreated date default getDate(),
