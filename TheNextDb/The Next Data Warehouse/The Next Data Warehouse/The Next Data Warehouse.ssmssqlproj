@@ -19,11 +19,17 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="Product Dimensions.sql">
+        <FileNode Name="Production Dimensions.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(localdb)\MSSQLLocalDB:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>(localdb)\MSSQLLocalDB</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>Product Dimensions.sql</FullPath>
+          <FullPath>Production Dimensions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Products Sales Dimensions.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:(localdb)\MSSQLLocalDB:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>(localdb)\MSSQLLocalDB</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Products Sales Dimensions.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
