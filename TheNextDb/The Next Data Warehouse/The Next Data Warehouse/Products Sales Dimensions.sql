@@ -3,35 +3,35 @@ create table Dim_ProductSales
 	Dim_ProductSalesId int primary key identity(1,1),
 	
 	--Products
-	ProductId uniqueidentifier  not null,
-	ProductName varchar(50)  not null,
-	ProductDescription varchar(550)  not null,
-	ProductCost smallmoney  not null,
+	ProductId uniqueidentifier  ,
+	ProductName varchar(50)  ,
+	ProductDescription varchar(550)  ,
+	ProductCost smallmoney  ,
 	
 	--Orders
-	OrderId uniqueidentifier  not null,
-	OrderDate date  not null,
-	OrderStatus smallint  not null,
-	OrderTotalAmount money not null,
+	OrderId uniqueidentifier  ,
+	OrderDate date  ,
+	OrderStatus smallint  ,
+	OrderTotalAmount money ,
 	
 	--OrderProducts
-	OrderProductId uniqueidentifier not null,
-	OrderProductQuantity tinyint not null,
+	OrderProductId uniqueidentifier ,
+	OrderProductQuantity tinyint ,
 	
 	--Customers
-	CustomerId uniqueidentifier not null,
-	CustomerFirstName varchar (50) not null,
+	CustomerId uniqueidentifier ,
+	CustomerFirstName varchar (50) ,
 	CustomerMiddleName varchar (50) null,
-	CustomerLastName varchar (50) not null,
-	CustomerPhoneNumber varchar (20) not null,
-	CustomerEmail varchar(50) not null,
-	CustomerStreetAddress varchar(100) not null,
-	CustomerCity varchar(50) not null,
-	CustomerProvince varchar(50) not null,	
-	CustomerDateCreated date not null,
-	CustomerIsActive bit not null,
+	CustomerLastName varchar (50) ,
+	CustomerPhoneNumber varchar (20) ,
+	CustomerEmail varchar(50) ,
+	CustomerStreetAddress varchar(100) ,
+	CustomerCity varchar(50) ,
+	CustomerProvince varchar(50) ,	
+	CustomerDateCreated date ,
+	CustomerIsActive bit ,
 	
 	--Sales
-	SaleId uniqueidentifier not null,
-	SaleDate datetime not null,			
+	SaleId uniqueidentifier ,
+	SaleDate datetime ,			
 );
