@@ -3,33 +3,34 @@ create table Dim_Productions
 	Dim_PrdouctionsId int primary key identity(1,1),
 	
 	--Products
-	ProductId uniqueidentifier not null,
-	ProductName varchar(50) not null,
-	ProductDescription varchar(50) not null,
-	ProductDateCreated date not null,
+	ProductId uniqueidentifier ,
+	ProductName varchar(50) ,
+	ProductDescription varchar(50) ,
+	ProductDateCreated date ,
 	
 	--Facilities
-	ProductionFacilityId uniqueidentifier not null,
-	ProductionFacilityName varchar(100) not null,
-	ProductionFacilityEmail varchar(50) not null,
-	ProductionFacilityPhone varchar(50) not null,	
-	ProductionFacilityCategory tinyint not null,
-	ProductionFacilityStreetAddress varchar(100) not null,
-	ProductionFacilityPostalCode varchar(20) not null,
-	ProductionFacilityCity varchar(50) not null,
-	ProductionFacilityProvince varchar (50) not null,
-	ProductionDateCreated date not null,
+	ProductionFacilityId uniqueidentifier ,
+	ProductionFacilityName varchar(100) ,
+	ProductionFacilityEmail varchar(50) ,
+	ProductionFacilityPhone varchar(50) ,	
+	ProductionFacilityCategory tinyint ,
+	ProductionFacilityStreetAddress varchar(100) ,
+	ProductionFacilityPostalCode varchar(20) ,
+	ProductionFacilityCity varchar(50) ,
+	ProductionFacilityProvince varchar (50) ,
+	ProductionDateCreated date ,
 	
 	--ProductionCycles
-	ProductionCycleId uniqueidentifier not null,
-	ProductionCycleName varchar(50) not null,
-	ProductionCycleDescription varchar(550) not null,
-	ProductionCycleEstimatedTime smalldatetime not null,
+	ProductionCycleId uniqueidentifier ,
+	ProductionCycleName varchar(50) ,
+	ProductionCycleDescription varchar(550) ,
+	ProductionCycleEstimatedTime smalldatetime ,
 	
 	--Bussiness logic
-	DateCreated date not null,
+	DateCreated date ,
 	
 	--Production Costs
-	ProductionCostId uniqueidentifier not null,
-	ProductionCost smallmoney not null,
+	ProductionCostId uniqueidentifier ,
+	ProductionCost smallmoney ,
 );
+
